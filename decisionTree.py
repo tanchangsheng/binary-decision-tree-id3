@@ -4,16 +4,6 @@ import csv
 import numpy as np
 
 
-# Use mutual information to determine which attribute to split on.
-# • Be sure you’re correctly weighting your calculation of mutual information. For a split on attribute X,
-# I(Y ;X) = H(Y ) 􀀀 H(Y jX) = H(Y ) 􀀀 P(X = 0)H(Y jX = 0) 􀀀 P(X = 1)H(Y jX = 1).
-# Equivalently, you can calculate I(Y ;X) = H(Y ) + H(X) 􀀀 H(Y;X).
-# • As a stopping rule, only split on an attribute if the mutual information is > 0.
-# • Do not grow the tree beyond a max-depth specified on the command line. For example, for a maximum
-# depth of 3, split a node only if the mutual information is > 0 and the current level of the node is < 3.
-# • Use a majority vote of the labels at each leaf to make classification decisions.
-# • Do not hard-code any aspects of the datasets into your code. We will autograde your programs on two
-# (hidden) datasets that include different attributes and output labels.
 
 # H(Y|X = x) for each value of Y
 
